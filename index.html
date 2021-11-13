@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="roi-container">
+      <div class="roi-header">
+        <p class="header-text">ROI Calculator</p>
+        <div class="close">
+          <img src="Media/cross.svg" alt="Cross Icon" />
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------- -->
+
+      <div class="roi-input">
+        <div class="input-top">
+          <p>USD</p>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+          <p>CAKE</p>
+          <img src="Media/cake.png" alt="Cake Image" />
+        </div>
+
+        <div class="input-middle">
+          <input
+            id="invested"
+            class="text-input"
+            type="number"
+            placeholder="0.000 USD"
+          />
+        </div>
+
+        <div class="input-bottom">
+          <div class="ib_left">
+            <div class="ib_left-div">
+              <p>$1000</p>
+            </div>
+            <div class="ib_left-div">
+              <p>$100</p>
+            </div>
+          </div>
+          <div class="ib_right">
+            <p class="invested-output">~ CAKE 0.000</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------- -->
+
+      <div class="timeframe">
+        <p class="tf-text">Timeframe</p>
+        <ul class="roi-list timeframe-list">
+          <li class="roi-list-item roi-list-active">1 Day</li>
+          <li class="roi-list-item">7 Days</li>
+          <li class="roi-list-item">30 Days</li>
+          <li class="roi-list-item">1 Year</li>
+          <li class="roi-list-item">5 Year</li>
+        </ul>
+      </div>
+
+      <!-- --------------------------------------------------- -->
+
+      <div class="apy">
+        <div class="apy-header">
+          <p class="apy-text">Enable Accelerated APY</p>
+          <label class="switch apy-switch">
+            <input id="apy-switch" type="checkbox" checked />
+            <span class="slider apy-slider round"></span>
+          </label>
+        </div>
+
+        <div class="apy-list-container">
+          <p class="apy-list-container-heading">Select Tier</p>
+          <ul class="roi-list apy-list">
+            <li class="roi-list-item roi-list-active">Tier 1</li>
+            <li class="roi-list-item">Tier 2</li>
+            <li class="roi-list-item">Tier 3</li>
+            <li class="roi-list-item">Tier 5</li>
+            <li class="roi-list-item">Tier 5</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- --------------------------------------------------- -->
+
+      <div class="result">
+        <div class="result-top">
+          <p>ROI at Current Rates</p>
+        </div>
+
+        <div class="result-middle">
+          <input
+            id="returned"
+            class="text-input"
+            type="number"
+            placeholder="0.000 USD"
+          />
+        </div>
+
+        <div class="result-bottom">
+          <p>
+            <span class="invested-output">~ 0.000 CAKE</span> +
+            <span class="returned-output"> 0.000000 DON</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hide-details"><p>Hide Details ᐱ</p></div>
+
+    <footer>
+      <div class="footer-header">
+        <p class="fh-text">APY</p>
+        <p class="final-result">0%</p>
+      </div>
+
+      <ul class="footer-list">
+        <li>
+          <p>Calculated based on current rates</p>
+        </li>
+        <li>
+          <p>
+            All figures are estimates provided for your convenience only, and by
+            no means represent guranteed returns
+          </p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
